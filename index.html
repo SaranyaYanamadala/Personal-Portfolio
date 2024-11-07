@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id = "header"></div>
+    <div class="container">
+        <nav>
+            <!--<div id = "name">Devi Saranya Yanamadala</div>-->
+            <ul id = "sidemenu">
+                <div class="cross-icon" onclick = "closeMenu()">&#10005;</div>
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#services">Services</a></li>
+                <li><a href = "#portfolio">Portfolio</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+
+            <div class = "menu-icon" onclick = "openMenu()"> &#9776;</div>
+            
+        </nav>
+
+        <div class = "header-text">
+            <h1> Hi! I'm <br> <span>Devi Saranya Yanamadala</span></h1>
+        </div>
+    </div>
+
+    <!-------------About--------------->
+
+    <div id = "about">
+        <div class = "container">
+            <div class = "row">
+                <div class = "about-col-1"><img src = "pic.png"></div>
+                <div class="about-col-2">
+                    <h1 class = "sub-title">About Me</h1>
+                    <p>
+                        As a pre-final year undergraduate student in Computer Science, I am excited to showcase my skills 
+                        and experiences. With a strong foundation in computer systems and algorithms, I have developed a 
+                        passion for exploring the vast potential of AI and Data Science to drive innovation and solve real-world 
+                        problems. Throughout my academic journey, I have gained a solid understanding of Data Stuctures And Algorithms, 
+                        Machine Learning and Computer Science Fundamentals.This portfolio highlights my projects, achievements, and experiences
+                        demonstrating my capabilities and enthusiasm for a career in this exciting and rapidly evolving field. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick = "opentab(event, 'skills')">Skills</p>
+                        <p class = "tab-links" onclick = "opentab(event, 'experience')">Experience</p>
+                        <p class = "tab-links" onclick = "opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class = "tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java</li><li>Python</li>
+                            <li><span>Web Development</span><br>HTML<br>CSS<br>JavaScript</li>
+                            <li><span>Machine Learning</span><br>Supervised Machine Learning<br>Unsupervised Machine Learning</li>
+                        </ul>
+                    </div>
+
+                    <div class = "tab-contents" id = "experience">
+                        <ul>
+                            <li><span>Glow Genius</span><br>Implemented a skincare recommendation system. 
+                                This lets user to input their skintype and their specific concern and suggests the 
+                                best active ingredients that help you overcome the problem and also suggest some pro-tips 
+                                to improve their skin health.</li>
+                        </ul>
+                    </div>
+
+                    <div class = "tab-contents" id = "education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br>Bachelor Of Technology from Shri Vishnu Engineering College For Women</li>
+                            <li><span>2020 - 2022</span><br>Intermediate from Government Junior College</li>
+                            <li><span>2020</span><br>Secondary Education from Government High School<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------Services------------>
+    <div id = "services">
+        <div class="container">
+            <h1 class = "sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>
+                        I have a solid foundation in frontend web development, 
+                        with proficiency in HTML, CSS, and JavaScript. Through 
+                        my experience, I have developed a strong understanding 
+                        of how to structure web pages using HTML, style them 
+                        effectively with CSS, and add interactivity using 
+                        JavaScript. My skills allow me to create responsive, 
+                        user-friendly websites that provide an engaging user 
+                        experience. I am committed to continuously improving 
+                        my skills and staying updated with the latest web development 
+                        trends to deliver high-quality, modern web applications.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Machine Learning</h2>
+                    <p>
+                        I possess foundational skills in machine learning, with experience in understanding 
+                        and applying core concepts such as supervised and unsupervised learning, model training 
+                        and evaluation, and data preprocessing. My knowledge includes understanding algorithms like 
+                        linear regression, decision trees, and clustering, as well as practical experience in implementing 
+                        them in Python. I am eager to further deepen my expertise in machine learning and apply these skills 
+                        to solve real-world problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------my work------------>
+    <div id = "portfolio">
+        <div class="container">
+            <h1 class = "sub-title">My Work</h1>
+            <div class="work-list">
+                <!---<div class="work">
+                    <div class = "layer">
+                        <a href = "#">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around 
+                                the world.  Download it from the play store.
+                            </p>
+                            -------------need to add a image---------------
+                        </a>
+                    </div>
+                </div>-------------------------->
+
+                <div class="work">
+                    <img src = "skincare_recommendation.png">
+                    <div class = "layer"  id = "link-to-glowgenius">
+                        <h3>Glow Genius</h3>
+                        <p>
+                            This is a skincare recommendation system developed to address the skin
+                            concerns different user's might have. This suggests the users the active ingredients should be
+                            used for the treatment of their concern and also how to improve their skin health.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src = "machine_learning.png">
+                    <div class = "layer" id = "link-to-ml">
+                        <h3>Machine Learning Projects</h3>
+                        <p>
+                            Demonstrated various Machine Learning projects through which I developed strong foundations 
+                            in Machine Learning.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id = "contact">
+        <div class = "container">
+            <div class = "row">
+                <div class="contact-info">
+                    <h1 class = "sub-title">Contact Me</h1>
+                    <p><a href = "mailto:ysaranya1604@gmail.com" class = "email-to">ysaranya1604@gmail.com</a></p>
+                    <br>
+                    <p>+91 8639858001</p>
+                    <br>
+                    <div class="social-icons">
+
+                        <a href = "https://www.linkedin.com/in/devi-saranya-yanamadala-472439257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbmzpbokjSKaBnOGEovrBdQ%3D%3D">
+                            <img src = "icons8-linkedin-96.png">
+                        </a>
+
+                        <a href = "https://github.com/SaranyaYanamadala">
+                            <img src = "icons8-github-96.png">
+                        </a>
+
+                    </div>
+
+                    <a href = "My_Resume.pdf" download class = "download-btn">Download CV</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src = "index.js"></script>
+
+</body>
+</html>
