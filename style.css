@@ -22,6 +22,18 @@ body {
     background-position: center;
 }
 
+.header-text span {
+    font-weight: bold;
+    display: inline-block;
+    opacity: 0;
+    animation: growText 3s ease-in-out forwards;
+}
+
+@keyframes growText {
+    0% { font-size: 30px; opacity: 0; }
+    100% { font-size: 70px; opacity: 1; }
+}
+
 /*.menu-icon {
     font-size: 25px;
     cursor: pointer;
